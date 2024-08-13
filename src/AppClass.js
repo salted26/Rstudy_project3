@@ -22,8 +22,8 @@ class AppClass extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            select:'',
-            comSelect:'',
+            select: undefined,
+            comSelect: undefined,
             userResult:'',
             comResult:''
         }
@@ -80,12 +80,12 @@ class AppClass extends Component {
                     <BoxClass title="COMPUTER" item={this.state.comSelect} result={this.state.comResult}/>
                 </div>
                 <div className='main'>
-                    <button onClick={() => this.play('scissors')} className='btn'><img src={this.choice.scissors.url}
-                                                                                  alt={this.choice.scissors.name}/></button>
-                    <button onClick={() => this.play('rock')} className='btn'><img src={this.choice.rock.url}
-                                                                              alt={this.choice.rock.name}/></button>
-                    <button onClick={() => this.play('paper')} className='btn'><img src={this.choice.paper.url}
-                                                                               alt={this.choice.paper.name}/></button>
+                    <button onClick={() => this.play('scissors')} className='btn'>
+                        <img src={this.choice.scissors.url} alt={this.choice.scissors.name}/></button>
+                    <button onClick={() => this.play('rock')} className='btn'>
+                        <img src={this.choice.rock.url} alt={this.choice.rock.name}/></button>
+                    <button onClick={() => this.play('paper')} className='btn'>
+                        <img src={this.choice.paper.url} alt={this.choice.paper.name}/></button>
                 </div>
             </div>
         );

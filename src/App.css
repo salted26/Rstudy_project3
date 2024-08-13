@@ -16,11 +16,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  width: 400px;
+  height: 400px;
 }
 
 .img-box img{
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+
+  border:none;
 }
 
 .WIN {
@@ -45,3 +53,4 @@
   width: 40px;
   margin: 10px;
 }
+
