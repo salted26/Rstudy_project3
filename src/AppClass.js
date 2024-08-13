@@ -68,7 +68,7 @@ class AppClass extends Component {
     comJudgeMent = (result) => {
         if (result === 'DEFEAT') { return 'DEFEAT' }
         else if (result === 'WIN') { return 'LOSE' }
-        else if (result === 'LOSE') { return 'WIN' };
+        else if (result === 'LOSE') { return 'WIN' }
     }
 
 
