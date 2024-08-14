@@ -5,7 +5,7 @@
 
 .box {
   margin: 20px;
-  border: 2px solid grey;
+  border: 5px solid grey;
   width: 500px;
   height: 500px;
 
@@ -22,6 +22,10 @@
 .img-box {
   width: 400px;
   height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-box img{
@@ -49,8 +53,17 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  background: mistyrose;
+}
+
 .btn img {
   width: 40px;
   margin: 10px;
 }
 
+.bottom-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

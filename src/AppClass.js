@@ -71,6 +71,14 @@ class AppClass extends Component {
         else if (result === 'LOSE') { return 'WIN' }
     }
 
+    handleReset =()=>{
+        this.setState({
+            select: '',
+            comSelect: '',
+            userResult:'',
+            comResult:''
+        })
+    }
 
     render() {
         return (
@@ -79,13 +87,20 @@ class AppClass extends Component {
                     <BoxClass title="YOU" item={this.state.select} result={this.state.userResult}/>
                     <BoxClass title="COMPUTER" item={this.state.comSelect} result={this.state.comResult}/>
                 </div>
-                <div className='main'>
+                <div className='bottom-btn'>
                     <button onClick={() => this.play('scissors')} className='btn'>
                         <img src={this.choice.scissors.url} alt={this.choice.scissors.name}/></button>
                     <button onClick={() => this.play('rock')} className='btn'>
                         <img src={this.choice.rock.url} alt={this.choice.rock.name}/></button>
                     <button onClick={() => this.play('paper')} className='btn'>
                         <img src={this.choice.paper.url} alt={this.choice.paper.name}/></button>
+                </div>
+                <div className="bottom-btn">
+                    <button onClick={this.handleReset} className='btn'>
+                        <img
+                            src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Farrows-directions-1%2F24%2Freset-alt-3-solid-512.png"
+                            alt="reset"/>
+                    </button>
                 </div>
             </div>
         );
